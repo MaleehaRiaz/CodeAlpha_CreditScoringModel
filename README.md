@@ -24,7 +24,10 @@ Random Forest
 For reference, the actual winning submission in the original 2011 Kaggle Competition on this dataset scored an ROC-AUC of about 0.869, so this model's performance is competitive with the best-known public result.
 
 Why Random Forest Was Chosen
-Random Forest outperformed Logistic Regression on both ROC-AUC
+Random Forest outperformed Logistic Regression on both ROC-AUC and recall, without sarcificing precision. since missing a real defaulter is generaly more costly than a false alarm in a lending context, higher recall is the more important metric here. feature improtance also showed that RevovlingUtilizationOfUnsecuredLines was the single most important feature for Random Forest, desptie showing almost no linear correlation with the target this suggests a non-linear relationship that Logistic Regression alone couldnot capture.
+
+Tools Used:
+Python, Pandas, NumPy, Scikit-learn, XGBoost, SHAP, matpollib, seaborn
 
 
 
