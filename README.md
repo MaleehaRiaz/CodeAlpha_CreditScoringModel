@@ -14,3 +14,8 @@ Give Me Some Credit is a real dataset from a 2011 Kaggle competition, containing
    ii- Random Forest
 4. Evaluation: Used Precision, Recall, F1-Score, and ROC-AUC (not just accuracy, since the target is heavily imbalanced; only 6.7% of people in the dataset actually defaulted)
 5. Extra Work: Added 5-fold cross-validation, hyperparameter tuning (GridSearchCV), an XGBoost comparison model, SHAP-based interpretability, and decision threshold tuning.
+
+Results
+
+Logistic Regression
+Random Forest
