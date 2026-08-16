@@ -20,16 +20,13 @@ Give Me Some Credit is a real dataset from a 2011 Kaggle competition, containing
 Logistic Regression: ROC-AUC 0.823, Recall 0.65, Precision 0.23
 Random Forest: ROC-AUC 0.866, Recall 0.75, Precision 0.23
 
-Random Forest performs better, so I used it as my final model.
-
-5-fold cross-validation confirmed that the Random Forest result is stable: mean ROC-AUC = 0.861 (± 0.003)
+The Random Forest performs better, so I used it as my final model.
+The 5-fold cross-validation confirmed that the Random Forest result is stable: mean ROC-AUC = 0.861 (± 0.003)
 For reference, the actual winning submission in the original 2011 Kaggle Competition on this dataset scored an ROC-AUC of about 0.869, so this model's performance is competitive with the best-known public result.
 
-Why Random Forest Was Chosen
+# Why Random Forest Was Chosen?
+
 Random Forest outperformed Logistic Regression on both ROC-AUC and recall, without sacrificing precision. Since missing a real defaulter is generally more costly than a false alarm in a lending context, higher recall is the more important metric here. Feature importance also showed that RevolvingUtilizationOfUnsecuredLines was the single most important feature for Random Forest; despite showing almost no linear correlation with the target, this suggests a non-linear relationship that Logistic Regression alone could not capture.
 
-Tools Used:
+# Tools Used:
 Python, Pandas, NumPy, Scikit-learn, XGBoost, SHAP, matpollib, seaborn
-
-
-
