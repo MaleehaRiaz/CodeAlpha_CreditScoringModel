@@ -18,6 +18,7 @@ Give Me Some Credit is a real dataset from a 2011 Kaggle competition, containing
 # Results
 
 Logistic Regression: ROC-AUC 0.823, Recall 0.65, Precision 0.23
+
 Random Forest: ROC-AUC 0.866, Recall 0.75, Precision 0.23
 
 The Random Forest performs better, so I used it as my final model.
