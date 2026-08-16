@@ -22,3 +22,9 @@ Random Forest
 
 5-fold cross-validation confirmed that the Random Forest result is stable: mean ROC-AUC = 0.861 (± 0.003)
 For reference, the actual winning submission in the original 2011 Kaggle Competition on this dataset scored an ROC-AUC of about 0.869, so this model's performance is competitive with the best-known public result.
+
+Why Random Forest Was Chosen
+Random Forest outperformed Logistic Regression on both ROC-AUC
+
+
+
