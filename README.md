@@ -15,10 +15,12 @@ Give Me Some Credit is a real dataset from a 2011 Kaggle competition, containing
 4. Evaluation: Used Precision, Recall, F1-Score, and ROC-AUC (not just accuracy, since the target is heavily imbalanced; only 6.7% of people in the dataset actually defaulted)
 5. Extra Work: Added 5-fold cross-validation, hyperparameter tuning (GridSearchCV), an XGBoost comparison model, SHAP-based interpretability, and decision threshold tuning.
 
-Results
+# Results
 
-Logistic Regression
-Random Forest
+Logistic Regression: ROC-AUC 0.823, Recall 0.65, Precision 0.23
+Random Forest: ROC-AUC 0.866, Recall 0.75, Precision 0.23
+
+Random Forest performs better, so I used it as my final model.
 
 5-fold cross-validation confirmed that the Random Forest result is stable: mean ROC-AUC = 0.861 (± 0.003)
 For reference, the actual winning submission in the original 2011 Kaggle Competition on this dataset scored an ROC-AUC of about 0.869, so this model's performance is competitive with the best-known public result.
