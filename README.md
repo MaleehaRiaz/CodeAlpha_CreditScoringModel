@@ -5,5 +5,11 @@ This project predicts whether a person is likely to default on a loan (miss paym
 
 # Dataset
 Give Me Some Credit is a real dataset from a 2011 Kaggle competition, containing 150,000 anonymized borrower records with features like income, debt ratio, credit utilization, and past late payments.
-Source: 
 
+# Project Workflow
+1. Data Cleaning: Fixed an invalid age value (age = 0), corrected placeholder glitch values (96/98) in the late-payment columns, and filled in missing income and dependents values
+2. Feature Engineering: Combined the three late-payment columns into a single TotalTimesLate feature, which correlated more strongly with default than any single original feature. Also created HasBeenLate, TotalCreditLines, and IncomePerDependent
+3. Modeling: Trained and compared two models:
+   i- Logistic Regression (baseline)
+   ii- Random Forest
+4. Evaluation:
